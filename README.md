@@ -8,3 +8,12 @@ This is Elia Cheng's personal webiste, this repo is a clone of https://github.co
     <a><img src="submission images/activity 1.png"></a>
   </kbd>
 </p>
+
+# Activity 2
+
+<p align="center"> 
+  <kbd>
+    <a><img src="submission images/activity 2-1.png"></a>
+  </kbd>
+</p>
+
