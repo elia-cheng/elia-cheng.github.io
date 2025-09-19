@@ -544,12 +544,12 @@
 
     const button = document.getElementById('load-button');
     const display_content = document.getElementById('recent-projects');
+    let index = 0; 
 
     function load_content(){
       const new_item = document.createElement("div");
       new_item.className = "col s12 m6 l4";
 
-      let index = 0;
       new_item.innerHTML = `
         <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
