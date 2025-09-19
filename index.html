@@ -331,24 +331,19 @@
     </section>
 
     <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text plum">Projects</h3>
-      <div class="container">
-        <h4 style="text-align: center;">Most Recent Project</h4>
-        
-        <div id="recent-projects" style="display: flex; justify-content: center;" class="row"></div>
-        
-        <div id="load-button" class="button" style="display: flex; justify-content: center;" role="button">
-          <a class="loadmore">Load More</a>
-        </div>
+  <section id="projects" class="section scrollspy">
+    <h3 class="page-title white-text plum">Projects</h3>
+    <h4 style="text-align: center;">Most Recent Project</h4>
+    <div class="container">
 
-          <!-- ************* -->
+      <div id="recent-projects" style="display: flex; justify-content: center;" class="row"></div>
 
-
+    </div>
+      <div id="load-button" class="button" style="display: flex; justify-content: center;" role="button">
+        <a class="loadmore">Load More</a>
       </div>
-        
-      </div>
-    </section>
+    </div>
+  </section>
 
     <!-- Fifth Section: Skills -->
     <section id="skills" class="section scrollspy">
@@ -557,7 +552,7 @@
       new_item.className = "col s12 m6 l4";
 
       let index = 0;
-      new_intem.innerHTML = `
+      new_item.innerHTML = `
         <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
             <img alt="${new_item[index].title}" src="${new_item[item].img}" style="height: 100%; width: 100%" class="activator" />
