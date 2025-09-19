@@ -333,11 +333,10 @@
     <!-- Fourth Section: Projects -->
   <section id="projects" class="section scrollspy">
     <h3 class="page-title white-text plum">Projects</h3>
-    <h4 style="text-align: center;">Most Recent Project</h4>
+ 
     <div class="container">
-
+      <h4 style="text-align: center;">Most Recent Projects</h4>
       <div id="recent-projects" style="display: flex; justify-content: center;" class="row"></div>
-
     </div>
       <div id="load-button" class="button" style="display: flex; justify-content: center;" role="button">
         <a class="loadmore">Load More</a>
@@ -585,10 +584,8 @@
     }
 
     }
-    button.addEventListener('click', load_content => {
-      console.log('Project loaded');
-      document.addEventListener('DOMContentLoaded', load_content)
-    });
+    button.addEventListener('click', load_content);
+    document.addEventListener('DOMContentLoaded', load_content);
   </script>
 
   <!-- jQuery-->
