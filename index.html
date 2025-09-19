@@ -368,15 +368,15 @@
           </div>
         </div>
         
-        <div id="load-button" class="button" style="display: flex; justify-content: center;">
+        <div id="load-button" class="button" style="display: flex; justify-content: center;" role="button">
           <a class="loadmore">Load More</a>
         </div>
         
         <h3>List of Projects</h3>
-        <div id="all-projects">
+
           <div class="row">
           <div class="col s12 m6 l4">
-            <div class="card medium">
+            <div id="all-projects" class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="GIS Tool" src="/assets/img/generic-gis-logo.png" style="height: 100%; width: 100%" class="activator" />
               </div>
@@ -406,7 +406,7 @@
           </div>
 
           <div class="col s12 m6 l4">
-            <div class="card medium">
+            <div id="all-projects" class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="quiz app" src="/assets/img/mona-lisa.png" style="height: 100%; width: 100%" class="activator" />
               </div>
@@ -432,7 +432,7 @@
 
           <!-- Flask Project -->
           <div class="col s12 m6 l4">
-            <div class="card medium">
+            <div id="all-projects" class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Screenshot of web app" src="/assets/img/group-chat-icon-discussion-text-and-voice-conference-chat-team-speech-bubbles-vector.jpg"
                 style="height: 100%; width: 100%" class="activator" />
@@ -459,7 +459,7 @@
           </div>         
 
           <!-- ************* -->
-        </div>
+
 
       </div>
         
@@ -640,35 +640,10 @@
 
   <!-- project dom -->
   <script>
-    const proj = document.querySelector("#all-projects .card.medium");  
-    const recent = document.getElementById('recent-projects');
-    const load_button = document.getElementById('load-button');
+    const button = document.getElementById('load-button');
 
-    let index = 0;
-    const cards_shown = 1;
-
-    function load_card (){
-      const end_ind = index + cards_shown;
-      const show_card = Array.from(proj).slice(index, end_ind);
-
-      show_card.forEach(card => {
-        const clone = card.cloneNode(true);
-
-        const col = document.createElement('div');
-        col.className = 'col s12 m6 l4';
-        col.appendChild(clonedCard);
-
-        recent.appendChild(col);
-      });
-
-      index = end_ind;
-
-      
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      load_card();
-      load_button.addEventListener('click', load_card);
+    button.addEventListener('click', () => {
+      console.log('button click worked');
     });
   </script>
 
