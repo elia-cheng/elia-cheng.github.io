@@ -95,6 +95,20 @@
   -webkit-border-radius: 5px;
 }
 
+.loadmore {
+  position: relative;
+  padding: 11px 35px;
+  background: #a675a1;
+  color: #25283d;
+  border: 2px solid #a675a1;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
 /* .readme:hover{
   color: #25283d;
   background-color: #efd9ce;
