@@ -335,7 +335,6 @@
     <h3 class="page-title white-text plum">Projects</h3>
  
     <div class="container">
-      <h4 style="text-align: center;">Most Recent Projects</h4>
       <div id="recent-projects" style="display: flex; justify-content: center;" class="row"></div>
     </div>
       <div id="load-button" class="button" style="display: flex; justify-content: center;" role="button">
@@ -554,21 +553,21 @@
       new_item.innerHTML = `
         <div class="card medium">
           <div class="card-image waves-effect waves-block waves-light">
-            <img alt="${new_item[index].title}" src="${new_item[item].img}" style="height: 100%; width: 100%" class="activator" />
+            <img alt="${all_projects[index].title}" src="${all_projects[item].img}" style="height: 100%; width: 100%" class="activator" />
           </div>
           <div class="card-content">
-            <span class="card-title activator plum-text hoverline">${new_item[index].title}<i
+            <span class="card-title activator plum-text hoverline">${all_projects[index].title}<i
               class="mdi-navigation-more-vert right"></i></span>
             <p>
-              ${new_item[index].description}
+              ${all_projects[index].description}
             </p>
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text"><small>Accomplishments</small><i
                 class="mdi-navigation-close right"></i></span>
             <ul>
-              <li><b>Tools: </b>${new_item[index].tools}</li>
-              ${new_item[index].accomplishmets.map(a => '<li>${a}</li>').join()}
+              <li><b>Tools: </b>${all_projects[index].tools}</li>
+              ${all_projects[index].accomplishmets.map(a => '<li>${a}</li>').join()}
             </ul>
           </div>
         </div>
